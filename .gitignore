@@ -1,0 +1,6 @@
+node_modules
+.cache
+.DS_Store
+config.env
+public/js/bundle.js.map
+public/js/bundle.js
