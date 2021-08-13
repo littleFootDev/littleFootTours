@@ -4,6 +4,7 @@ include _reviewCard
 block append head
   script(src='https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js')
   link(href='https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet')
+  script(src="https://js.stripe.com/v3/") 
 
 mixin overviewBox(label, text, icon)
   .overview-box__detail
@@ -88,4 +89,4 @@ block content
         if user 
           button.btn.btn--green.span-all-rows#book-tour(data-tou-id=`${tour.id}`) Book tour now!
         else 
-          a.btn.btn--green.span-all-rows(href='/login')
+          a.btn.btn--green.span-all-rows(href='/login') Log in to book tour
